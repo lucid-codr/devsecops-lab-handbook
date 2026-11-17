@@ -1,0 +1,8 @@
+node {
+    stage('Build') { echo 'Building Project' }
+    stage('Test') { echo 'Running Tests' }
+    stage('Run Python') {
+        bat 'python C:\\PipelineDemo\\hello.py'
+    }
+    stage('Deploy') { echo 'Deployment Successful' }
+}

@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps { echo 'Building Project' }
+        }
+        stage('Test') {
+            steps { echo 'Running Tests' }
+        }
+        stage('Run Python') {
+            steps { bat 'python C:\\PipelineDemo\\hello.py' }
+        }
+        stage('Deploy') {
+            steps { echo 'Deployment Successful' }
+        }
+    }
+}

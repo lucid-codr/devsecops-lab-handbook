@@ -1,0 +1,6 @@
+.terraform/
+*.tfstate*
+*.tfvars
+*.tfplan
+lab-key
+lab-key.pub
